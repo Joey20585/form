@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="Odin Logo">
+                <h1>ODIN</h1>
+            </div>
+            <p class="photo-credit">Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+        </div>
+
+        <div class="right">
+            <div class="first">
+                <h2>This is not a real online service! You know you need something 
+                    like this in your life to help you realize your deepest dreams. 
+                    Sign up <em>now</em> to get started.</h2>
+                <h2><strong>You know you want to.</strong></h2>
+            </div>
+
+            <div class="second">
+                <h2>Let's do this!</h2>
+                <form action="" method="post" class="form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name"
+                             minlength="3" maxlength="10" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" required   minlength="3" maxlength="10" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="tel" id="phone_number" name="phone_number" minlength="10" maxlength="14" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" minlength="6" required>
+                            <p class="invalid">password should be atleast 6 characters</p>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" id="confirm_password" name="confirm_password" minlength="6" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="third">
+                <button type="submit" class="button">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
